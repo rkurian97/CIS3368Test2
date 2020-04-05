@@ -23,15 +23,19 @@ public class Virus {
     @Column(name= "mortalityrate")
     private double mortalityrate;
 
+    @Column(name= "image")
+    private String image;
+
     public Virus() {
     }
-    public Virus(int id, String name, String description, String symptoms, double duration, double mortalityrate) {
+    public Virus(int id, String name, String description, String symptoms, double duration, double mortalityrate, String image) {
         this.id= id;
         this.name=name;
         this.description=description;
         this.symptoms=symptoms;
         this.duration=duration;
         this.mortalityrate=mortalityrate;
+        this.image=image;
     }
 
     public int getId() {
@@ -80,5 +84,13 @@ public class Virus {
 
     public void setMortalityrate(double mortalityrate) {
         this.mortalityrate = mortalityrate;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

@@ -10,6 +10,12 @@
             border-collapse: collapse;
             width: 100%;
         }
+        img {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 120px;
+        }
 
         td, th {
             border: 1px solid #dddddd;
@@ -34,6 +40,7 @@
         <th>symptoms</th>
         <th>duration (days)</th>
         <th>mortality rate (%)</th>
+        <th>image</th>
     </tr>
     <c:forEach var = "listitem" items = "${viruslist}">
         <tr>
@@ -43,6 +50,7 @@
             <td>${listitem.symptoms}</td>
             <td>${listitem.duration}</td>
             <td>${listitem.mortalityrate}</td>
+            <td> <img src=${listitem.image}> </td>
             <td></td>
         </tr>
     </c:forEach>
