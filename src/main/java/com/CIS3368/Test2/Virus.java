@@ -1,16 +1,26 @@
 package com.CIS3368.Test2;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Virus {
     @Id
+    @Column(name = "id")
     private int id;
+
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "description")
     private String description;
+
+    @Column(name = "symptoms")
     private String symptoms;
+
+    @Column(name = "duration")
     private double duration;
+
+    @Column(name= "mortalityrate")
     private double mortalityrate;
 
     public Virus() {
