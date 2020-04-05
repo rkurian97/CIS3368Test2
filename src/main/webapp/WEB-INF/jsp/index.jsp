@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Exam 2</title>
+    <title> 5 Viruses to Know</title>
     <style>
         table {
             font-family: arial, sans-serif;
